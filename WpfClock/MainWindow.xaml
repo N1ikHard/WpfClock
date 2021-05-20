@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="300" Width="500" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="{x:Null}" MouseLeftButtonDown="Window_MouseLeftButtonDown_1">
+    <Grid>
+        <Path Fill="Red" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="3">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform x:Name="RotationSecond" Angle="45"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure IsClosed="true" StartPoint="247,170">
+                        <LineSegment Point="253,170"/>
+                        <LineSegment Point=" 252,10"/>
+                        <LineSegment Point=" 250,4"/>
+                        <LineSegment Point=" 248,30"/>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+        <Path Data="M240 170 L260 170 L255,20 L250,15 L245,20 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform x:Name="RotationMinute" Angle="90"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Fill="Black" Data="M240 ,170 l20 0 l-5 -110 l-5 -5 l-5,5 Z" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                  
+                    <RotateTransform x:Name="RotationHour" Angle="120"/>
+                 
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="30"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="60"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="90"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="120"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="150"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="180"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="270"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="300"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="330"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="360"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="240"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="270"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path Data="M249,8 l2 0 l0 8 l-2 0 Z" Fill="Black" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="210"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+    </Grid>
+</Window>
